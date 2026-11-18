@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍️ ShopEase</h1>
+    <p>Your Favourite Online Shopping Store</p>
+    <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+</header>
+
+<section class="hero">
+    <h2>Discover Something New!</h2>
+    <p>Shop your favourite products at amazing prices.</p>
+</section>
+
+<main>
+    <h2 class="section-title">Our Products</h2>
+    <div id="products" class="product-container"></div>
+
+    <section class="cart-section">
+        <h2>Your Shopping Cart</h2>
+        <div id="cartItems"></div>
+
+        <div class="summary">
+            <p>Subtotal: <span id="subtotal">₹0</span></p>
+            <p>Delivery: <span id="delivery">₹0</span></p>
+            <h3>Total: <span id="total">₹0</span></h3>
+            <button onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </section>
+</main>
+
+<dialog id="checkoutModal">
+    <h2>Order Summary 🎉</h2>
+    <div id="orderSummary"></div>
+    <p>This is a demonstration checkout. No payment is taken.</p>
+    <button onclick="closeCheckout()">Close</button>
+</dialog>
+
+<footer>
+    <p>© 2026 ShopEase | Created for Project 05</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
